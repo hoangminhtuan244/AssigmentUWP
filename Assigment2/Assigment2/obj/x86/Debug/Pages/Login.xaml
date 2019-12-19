@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="Assigment2.Pages.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Assigment2.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Margin="20">UserName :</TextBlock>
+        <TextBox x:ConnectionId='1' x:Name="FullName" Text=" " Grid.Row="0" Grid.Column="1" Margin="20"></TextBox>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Margin="20">PassWord :</TextBlock>
+        <PasswordBox x:ConnectionId='2' x:Name="PassWord" Grid.Row="1" Grid.Column="1" Margin="20"></PasswordBox>
+
+        <TextBlock x:ConnectionId='3' x:Name="MessagesUserName" Grid.Row="0" Grid.Column="2"></TextBlock>
+        <TextBlock x:ConnectionId='4' x:Name="MessagesPassWord" Grid.Row="1" Grid.Column="2"></TextBlock>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1">
+            <Button Margin="20" >Log In</Button>
+            <Button Margin="20" >Regiter</Button>
+        </StackPanel>
+    </Grid>
+</Page>
+
